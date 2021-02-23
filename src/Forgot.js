@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import Particles from 'react-particles-js';
-import './login.css';
+import './forgot.css';
 const particlesopt = {
                 particles: {
                   number:{
@@ -13,25 +13,26 @@ const particlesopt = {
                   
                 }
               }
-class Login extends Component{
+class Forgot extends Component{
   render(){
     return (
       <div class="container">
       <Particles className="particles"
               params={particlesopt}
             />
-      <h1>E-Election Voting System Login</h1>
+      <h1>E-Election Voting System </h1>
     <div class="row">
         <div class="col-md-12">
             <div class="card">
                 <form class="box">
-                    <h1>Login</h1>
-                    <p class="text-muted"> Please enter your Voter ID Number and password!</p> 
-                    <input type="text" name="" placeholder="Voter ID Number" required/> 
-                    <input type="password" name="" placeholder="Password" required/>
+                    <h1>Forgot Password</h1>
+                    <p class="text-muted"> Please enter the required details!</p> 
+                    <input type="text" name="" placeholder="OTP" required/> 
+                    <input type="password" name="" placeholder="New Password" required/>
+                    <input type="password" name="" placeholder="Re-Enter New Password" required/>
                     <div class="other_option">
-                     <a class="forgot text-muted" href="#">Forgot password?</a> 
-                     <a class="forgot text-muted reg" href="#">Register</a><input type="submit" name="" value="Login" href="#"/>
+                     <a class="forgot text-muted" href="#">Login</a> 
+                     <a class="forgot text-muted reg" href="#">Register</a><input type="submit" name="" value="Submit" href="#"/>
                     </div>
                 </form>
             </div>
@@ -42,4 +43,4 @@ class Login extends Component{
   }
 }
 
-export default Login;
+export default Forgot;

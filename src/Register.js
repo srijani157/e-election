@@ -26,10 +26,12 @@ class Register extends Component{
             <div class="card">
                 <form class="box">
                     <h1>Register</h1>
-                    <p class="text-muted"> Please enter the following details!</p> <input type="text" name="" placeholder="Name"/> 
-                    <input type="email" name="" placeholder="Email ID"/> 
-                    <input type="text" name="" placeholder="Voter ID Number"/> 
-                    <input type="password" name="" placeholder="Password"/>
+                    <p class="text-muted"> Please enter the following details!</p> 
+                    <input type="text" name="" placeholder="Name" required/> 
+                    <input type="tel" name="" placeholder="Mobile Number" pattern="[0-9]{10}" required/> 
+                    <input type="text" name="" placeholder="Voter ID Number" required/> 
+                    <input type="password" name="" placeholder="Password" required/>
+                    <input type="password" name="" placeholder="Re-Enter Password" required/>
                     <div class="other_option">
                      <a class="forgot text-muted" href="#">Forgot password?</a> 
                      <a class="forgot text-muted reg" href="#">Login</a><input type="submit" name="" value="Register" href="#"/>
