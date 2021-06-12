@@ -20,12 +20,15 @@ class Login extends Component{
       <Particles className="particles"
               params={particlesopt}
             />
-      <h1>E-Election Voting System Login</h1>
+      <div class="instructions" >
+          <a href="#" class="a-logout"><button class="btn btn2"><h6>Instruction Manual</h6></button></a>
+      </div>
+      <h1 class="heading">E-Election Voting System Login</h1>
     <div class="row">
         <div class="col-md-12">
             <div class="card">
                 <form class="box">
-                    <h1>Login</h1>
+                    <h2>Login</h2>
                     <p class="text-muted"> Please enter your Voter ID Number and password!</p> 
                     <input type="text" name="" placeholder="Voter ID Number" required/> 
                     <input type="password" name="" placeholder="Password" required/>

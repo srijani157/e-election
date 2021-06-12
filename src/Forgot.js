@@ -25,14 +25,16 @@ class Forgot extends Component{
         <div class="col-md-12">
             <div class="card">
                 <form class="box">
-                    <h1>Forgot Password</h1>
-                    <p class="text-muted"> Please enter the required details!</p> 
+                    <h2>Forgot Password</h2>
+                    <p class="text-muted"> Please enter the required details!</p>
+                    <input type="tel" name="" placeholder="Mobile Number" pattern="[0-9]{10}" required/> 
+                    <button class="otp-button">Send OTP</button>
                     <input type="text" name="" placeholder="OTP" required/> 
                     <input type="password" name="" placeholder="New Password" required/>
                     <input type="password" name="" placeholder="Re-Enter New Password" required/>
                     <div class="other_option">
                      <a class="forgot text-muted" href="#">Login</a> 
-                     <a class="forgot text-muted reg" href="#">Register</a><input type="submit" name="" value="Submit" href="#"/>
+                     <input type="submit" name="" value="Submit" href="#"/>
                     </div>
                 </form>
             </div>
