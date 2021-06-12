@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import Particles from 'react-particles-js';
+import { Link } from "react-router-dom";
 import eci from "./eci.png";
 import inc from "./inc.png";
 import bjp from "./bjp.png";
@@ -22,16 +23,16 @@ const particlesopt = {
 class Voter extends Component{
   render(){
     return (
-      <div class="container">
+      <div class="container vot-container">
       <Particles className="particles"
               params={particlesopt}
             />
 
-      <div class="log-out" >
-          <a href="#" class="a-logout"><button class="btn btn2"><h5>Log Out</h5></button></a>
+      <div class="vot-log-out" >
+          <Link to="/login"><button class="btn btn2 a-logout" ><h6>Log Out</h6></button></Link>
       </div>
       <img src={eci}  alt="eci" width="250" class="eci"/>
-      <h1 class="heading">Welcome to the Voting Page!! </h1>
+      <h1 class="vot-heading">Welcome to the Voting Page!! </h1>
       <h2>Session : 2021</h2>
       <div class="row voter-row">
         <div class="col-md-4 col1">

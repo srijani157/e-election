@@ -1,11 +1,14 @@
-.container{
+.reg-container{
     padding-top: 5%;
     
 }
-.instructions{
+.reg-instructions{
     position: absolute;
     top: 3%;
     right: 2%;
+}
+.inst-manual{
+    color: black;
 }
 .btn2{
     transition: 1s ease;
@@ -26,7 +29,7 @@
   left: 0;
   z-index: -1 ;
 }
-.card{
+.reg-card{
     width: 100%;
     border: none!important;
     padding-left: 29%;
@@ -35,7 +38,7 @@
     
 }
 
-.box {
+.reg-box {
     width: 100%;
     padding-top: 10%;
     background: #191919;
@@ -45,9 +48,7 @@
     margin-bottom: 10%;
 }
 
-.box input[type="text"],
-.box input[type="tel"],
-.box input[type="password"] {
+.reg-inp {
     border: 0;
     background: none;
     display: block;
@@ -62,20 +63,18 @@
     transition: 0.25s
 }
 
-.box h2 {
+.reg-box h2 {
     color: white;
     text-transform: uppercase;
     font-weight: 450;
 }
 
-.box input[type="text"]:focus,
-.box input[type="tel"]:focus,
-.box input[type="password"]:focus {
+.reg-inp:focus {
     width: 300px;
     border-color: #2ecc71
 }
 
-.box input[type="submit"] {
+.reg-sub{
     border: 0;
     background: none;
     display: block;
@@ -90,7 +89,7 @@
     cursor: pointer
 }
 
-.box input[type="submit"]:hover {
+.reg-sub:hover {
     background: #2ecc71
 }
 
@@ -102,36 +101,34 @@
     margin-left: 4%;
 }
 @media only screen and (max-device-width:992px) {
-   .heading{
+   .reg-heading{
     margin-top: 5%;
   }
 }
 @media only screen and (max-device-width:767px) {
-  .instructions{
+  .reg-instructions{
     position: static;
     float: right;
   }
-   .heading{
+   .reg-heading{
     margin-top: 11%;
   }
 }
 
 @media only screen and (max-device-width:545px) {
-  .container{
+  .reg-container{
     padding-bottom: 3%;
   }
-  .card {
+  .reg-card {
     padding-left: 0;
     padding-right: 0;
   }
 }
 @media only screen and (max-device-width:407px) {
-   .heading{
+   .reg-heading{
     margin-top: 19%;
   }
-  .box input[type="text"]:focus,
-.box input[type="tel"]:focus,
-.box input[type="password"]:focus {
+  .reg-inp:focus {
     width: 250px;
     border-color: #2ecc71
 }
