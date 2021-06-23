@@ -75,10 +75,10 @@ position: absolute;
 .btn1{
 	background: transparent;
 	border: none !important;
-	transition: 2s ease;
+	transition: 1s ease;
 }
 .btn1:active{
-	transform: scale(0.1);
+	transform: scale(0.8);
 }
 .row2{
 	padding-bottom: 5%;
